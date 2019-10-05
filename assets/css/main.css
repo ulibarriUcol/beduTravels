@@ -283,6 +283,7 @@ footer > ul > li:first-of-type {
 
 .top-country-gridarea > div{
   width: 24vw;
+  /* ancho de la imagen */
   height: 30vh;
   text-align: center;
 }
@@ -356,6 +357,19 @@ footer > ul > li:first-of-type {
   #icons-container{
     display: none;
   }
+  .top-country-gridarea{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    justify-items: center;
+    grid-gap: 6vw; /* espacio entre columnas*/
+  }
+    /* ancho de la imagen de cada pais */
+    .top-country-gridarea > div{
+      width: 45vw;
+      height: 30vh;
+      text-align: center;
+    }
   body{
     background-color: lightsalmon;
   }
@@ -371,6 +385,19 @@ footer > ul > li:first-of-type {
   body{
     background-color: lightgreen ;
   }
+  .top-country-gridarea{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    grid-gap: 7vw; /* espacio entre columnas*/
+  }
+    /* ancho de la imagen de cada pais */
+    .top-country-gridarea > div{
+      width: 30vw;
+      height: 30vh;
+      text-align: center;
+    }
 } 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -380,6 +407,19 @@ footer > ul > li:first-of-type {
   #icons-container{
     display: none;
   }
+  .top-country-gridarea{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    grid-gap: 7vw; /* espacio entre columnas*/
+  }
+    /* ancho de la imagen de cada pais */
+    .top-country-gridarea > div{
+      width: 30vw;
+      height: 30vh;
+      text-align: center;
+    }
   
   body{
     background-color: lightblue;
@@ -393,7 +433,19 @@ footer > ul > li:first-of-type {
   #icons-container{
     display: flex;
   }
-  
+  .top-country-gridarea{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    grid-gap: 9vw; /* espacio entre columnas*/
+  }
+    /* ancho de la imagen de cada pais */
+    .top-country-gridarea > div{
+      width: 24vw;
+      height: 30vh;
+      text-align: center;
+    }
   body{
     background-color: pink;
   }
@@ -405,6 +457,19 @@ footer > ul > li:first-of-type {
   }
   #icons-container{
     display: flex;
+  }
+  .top-country-gridarea{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 9vw; /* espacio entre columnas*/
+    justify-items: center;
+  }
+  /* ancho de la imagen de cada pais */
+  .top-country-gridarea > div{
+    width: 24vw;
+    height: 30vh;
+    text-align: center;
   }
   body{
     background-color: blue;
