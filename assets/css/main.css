@@ -84,6 +84,19 @@ ul {
   margin-top: 50px;
 }
 
+#icons-container-mobile{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#icons-container-mobile i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin-top: 50px;
+}
 
 
 /*Aquí definiremos algunas medidas de margin y padding estandar para nuestro proyecto, se irán agregando más en las siguientes sesiones*/
@@ -335,5 +348,67 @@ footer > ul > li:first-of-type {
 
 
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #icons-container-mobile{
+    display: flex;
+  }
+  #icons-container{
+    display: none;
+  }
+  body{
+    background-color: lightsalmon;
+  }
+} 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #icons-container-mobile{
+    display: flex;
+  }
+  #icons-container{
+    display: none;
+  }
+  body{
+    background-color: lightgreen ;
+  }
+} 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #icons-container-mobile{
+    display: flex;
+  }
+  #icons-container{
+    display: none;
+  }
+  
+  body{
+    background-color: lightblue;
+  }
+} 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #icons-container-mobile{
+    display: none;
+  }
+  #icons-container{
+    display: flex;
+  }
+  
+  body{
+    background-color: pink;
+  }
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #icons-container-mobile{
+    display: none;
+  }
+  #icons-container{
+    display: flex;
+  }
+  body{
+    background-color: blue;
+  }
+}
 
 
